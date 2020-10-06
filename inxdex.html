@@ -43,6 +43,7 @@
             <a href="#" class="button button-pro">BUY PRO</a>
             <a href="#" class="button button-demo">Demo</a>
 
+            
         </div>
 
     </header>
@@ -72,20 +73,80 @@
 
     <section>
         <div>
-            <h2>Who works on True Budget</h2>
-            <p id="about-text">The True budget app is made up of 15 dedicated professionals who work on high-quality development and customer care.</p>
+            <h2>What about your budget?</h2>
+            <p id="about-text">Calculate your life</p>
         </div>
-        <div>
-            <div class="col-6" id="team-image">
-                <img src="images/team.jpg">
+        <div class="calculating__field">
+            <div class="calculating__subtitle">
+                Choose a mode:
+            </div>
+            <div class="calculating__choose" id="gender">
+                <div class="calculating__choose-item calculating__choose-item_active">Expense</div>
+                <div class="calculating__choose-item">Income</div>
+            </div>
+
+            <div class="calculating__subtitle">
+                Write your bills 
+            </div>
+            <div class="calculating__choose calculating__choose_medium">
+                <input type="text" id="height" placeholder="Your life" class="calculating__choose-item">
+                <input type="text" id="weight" placeholder="Your loans"  class="calculating__choose-item">
+                <input type="text" id="age" placeholder="Your bills" class="calculating__choose-item">
+            </div>
+
+            <div class="calculating__subtitle">
+                What do you do with free money?
+            </div>
+            <div class="calculating__choose calculating__choose_big">
+                <div id="low" class="calculating__choose-item">I have a credit</div>
+                <div id="small"  class="calculating__choose-item calculating__choose-item_active">I don't have free money</div>
+                <div id="medium" class="calculating__choose-item">I'm saving money</div>
+                <div id="high" class="calculating__choose-item">I'm investing money</div>
+            </div>
+
+            <div class="calculating__divider"></div>
+
+            <div class="calculating__total">
+                <div class="calculating__subtitle_final">
+                    Your status: Investor!
+                </div>
+                <!-- <div class="calculating__result">
+                    <span>I'm</span> investor
+                </div> -->
             </div>
         </div>
+        <!-- <div>
+            <div id="team-image">
+                <img src="images/team.jpg">
+            </div>
+        </div> -->
     </section>
 
     <section class="col-12" id="how-to-order-section">
             <h2>Pro version</h2>
             <div class="col-4" id="phone-image-container">
                     <img src="images/sign-up.png" id="phone-image">
+                    <div class="promotion__timer">
+                        <div class="title">Until the end:</div>
+                        <div class="timer">
+                            <div class="timer__block">
+                                <span id="days">12</span>
+                                days
+                            </div>
+                            <div class="timer__block">
+                                <span id="hours">20</span>
+                                hours
+                            </div>
+                            <div class="timer__block">
+                                <span id="minutes">56</span>
+                                minutes
+                            </div>
+                            <div class="timer__block">
+                                <span id="seconds">20</span>
+                                seconds
+                            </div>
+                        </div>
+                    </div>
             </div>
             <div class="col-4">
                 <div class="order-step">
@@ -170,5 +231,7 @@
                     <p>Made by our team</p>
                 </div>
             </footer>
+
+            <script src="js/script.js"></script>
 </body>
 </html>
